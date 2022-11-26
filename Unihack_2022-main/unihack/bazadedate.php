@@ -1,22 +1,3 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-// Create database
-$sql = "CREATE DATABASE myDB";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $conn->error;
-}
-
-$conn->close();
+$sql = "CREATE USER \'bredor\'@\'localhost\' IDENTIFIED VIA mysql_native_password USING \'***\';GRANT ALL PRIVILEGES ON *.* TO \'bredor\'@\'localhost\' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS `bredor`;GRANT ALL PRIVILEGES ON `bredor`.* TO \'bredor\'@\'localhost\';";
 ?>
