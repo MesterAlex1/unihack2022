@@ -1,0 +1,45 @@
+.body{
+    background-image: url("131311-green-polygon-background-design.jpg");
+}
+
+.sidenav {
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(45, 139, 93); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    padding-left: 17px;
+
+    
+  }
+  
+  .sidenav a {
+
+    padding: 6px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #772400;
+    display: flex;
+    transition: 900ms;
+  }
+  
+ 
+  .sidenav a:hover {
+    color: #f1f1f1;
+    
+  }
+
+.links{
+    text-align: center;
+    margin-right: 0%;
+    bottom: 5%;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+}
+.orar{
+  margin-left: 25%;
+}
